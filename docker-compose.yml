@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  painel_web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: painel_web
+    env_file:
+      - .env
+    ports:
+      - "${PORT:-8000}:8000"
+    volumes:
+      - ./app:/app/app
+    restart: unless-stopped

@@ -1,0 +1,66 @@
+/* style.css — Estilo visual ZapPRO Painel GPT */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #161616; /* Preto fosco */
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+h1 {
+  color: #0fd9c5; /* Teal suave */
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.chat-entry {
+  background-color: #1f1f1f;
+  border-left: 4px solid #0fd9c5;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  background-color: #ff7a2f; /* Orange */
+  color: white;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #e6691f;
+  transform: scale(1.03);
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .chat-entry {
+    font-size: 0.95rem;
+  }
+
+  .button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
